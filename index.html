@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar-custom {
+            background-color: #bd726c;
+        }
+        .section {
+            background-image: url('book.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .btn-custom {
+            background-color: #e55b4f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #bd726c;
+        }
+        .logo {
+            height: 70px;
+            width: 70px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .bookitem:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .bookitem h2 {
+            margin-top: 0;
+            color: #ff6f61;
+        }
+        .bookitem button {
+            background-color: #bd726c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .bookitem button:hover {
+            background-color: #e55b4f;
+        }
+        .bookitem button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .bookitem button a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <img src="booklogo.jpeg" class="logo" alt="Logo">
+            <span class="navbar-brand text-white">BOOK-STORE</span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="booksecond.html">Product</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactpage.html">Contact <i class="fa fa-phone"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <section class="section">
+        <div class="content">
+            <h1 class="display-4">WELCOME TO THE ONLINE BOOKSTORE</h1>
+            <p>EXPLORE YOUR POTENTIAL</p>
+            <a href="booksecond.html" class="btn btn-custom btn-lg">View</a>
+        </div>
+    </section>
+
+    <footer class="mt-5">
+        <div class="container">
+            <p>&copy; BOOK-STORE.</p>
+        </div>
+    </footer>
+</body>
+</html>

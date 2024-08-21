@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color:rgb(215, 167, 215);
+            font-family: 'Arial', sans-serif;
+            color: black;
+            text-align: center;
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .bookitem {
+            background-color: #f0eae9;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 19px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .bookitem:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .bookitem h2 {
+            margin-top: 0;
+            color:rgb(205, 126, 205);
+        }
+
+        .bookitem img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bookitem p {
+            margin: 0.5em 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .bookitem button {
+            background-color:rgb(204, 97, 204);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .bookitem button:hover {
+            background-color: black;
+        }
+
+        .bookitem button a {
+            color:black;
+            text-decoration: none;
+        }
+
+        .bookitem button a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function placeOrder() {
+            alert("Order Placed");
+        }
+    </script>
+</head>
+<body>
+    <h1>BOOKS</h1>
+    <img class="logo rounded-circle" src="booklogo.jpeg" alt="Logo">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>Book of M</h2>
+                    <img src="img2.jpg" alt="book">
+                    <p>Price: Rs 200</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>It Ends With Us</h2>
+                    <img src="img9.jpg" alt="book">
+                    <p>Price: Rs 500</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>Harry Potter</h2>
+                    <img src="img4.jpg" alt="book">
+                    <p>Price: Rs 500</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>Twisted Love</h2>
+                    <img src="img5.webp" alt="book">
+                    <p>Price: Rs 600</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>Right Behind You</h2>
+                    <img src="img6.jpg" alt="book">
+                    <p>Price: Rs 650</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>The Old Man And the Sea</h2>
+                    <img src="img7..jpg" alt="book">
+                    <p>Price: Rs 600</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="bookitem">
+                    <h2>Gitanjali</h2>
+                    <img src="img8.jpg" alt="book">
+                    <p>Price: Rs 700</p>
+                    <button onclick="placeOrder()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
